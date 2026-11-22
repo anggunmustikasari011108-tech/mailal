@@ -1,0 +1,57 @@
+@import "tailwindcss";
+
+:root {
+  --boutique-primary: #87977B;
+  --boutique-secondary: #F7F2E8;
+  --boutique-accent: #C5A46D;
+  --boutique-bg: #FCFAF6;
+  --boutique-text: #394536;
+  --boutique-muted: #817B72;
+}
+
+@theme {
+  --font-serif: var(--font-cormorant), "Cormorant Garamond", Georgia, serif;
+  --font-sans: var(--font-jakarta), "Plus Jakarta Sans", system-ui, -apple-system, sans-serif;
+  --font-mono: var(--font-jetbrains), "JetBrains Mono", ui-monospace, monospace;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    font-family: var(--font-sans);
+    background-color: var(--boutique-bg);
+    color: var(--boutique-text);
+  }
+
+  body {
+    margin: 0;
+    background-color: var(--boutique-bg);
+    color: var(--boutique-text);
+    -webkit-font-smoothing: antialiased;
+    overflow-x: hidden;
+  }
+
+  h1, h2, .font-display {
+    font-family: var(--font-serif);
+    text-wrap: balance;
+  }
+}
+
+.tabular-nums {
+  font-variant-numeric: tabular-nums;
+}
+
+.islamic-lattice-bg {
+  background-image: radial-gradient(circle at 1px 1px, rgba(197, 164, 109, 0.16) 1px, transparent 0);
+  background-size: 28px 28px;
+}
+
+@media print {
+  .no-print {
+    display: none !important;
+  }
+  body {
+    background: #ffffff !important;
+    color: #111827 !important;
+  }
+}

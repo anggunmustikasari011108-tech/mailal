@@ -1,0 +1,8 @@
+{
+  "name": "MAILAL BOUTIQ HIJAB DAN BUSANA",
+  "description": "Website E-Commerce Fashion Muslimah Modern & Elegan dengan Sistem Manajemen Boutique Terintegrasi.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
